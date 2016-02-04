@@ -1,4 +1,5 @@
-<ul class="list-group">
-    <li class="list-group-item"><a href="#">Home</a></li>
+{{--<div class="btn-group-vertical" role="group" aria-label="...">--}}
+<ul class="nav nav-pills nav-justified">
+    <li><a href="{{ route('home_store_path') }}"><span class="glyphicon glyphicon-home"></span> Estado Actual</a></li>
+    <li><a href="{{ route('estaciones_show_path') }}"><span class="glyphicon glyphicon-home"></span> Reportes</a></li>
 </ul>
-

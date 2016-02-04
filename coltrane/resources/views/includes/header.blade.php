@@ -1,7 +1,12 @@
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
-            <p class="navbar-text navbar-right"><a href="#" class="navbar-link"><img src= {{asset('images/logo.png')}}></a></p>
+            <a class="navbar-brand" href="#"><img style="max-width:100px; margin-top: -7px;" src="http://localhost:8000/images/logo.png"></a>
         </div>
+
+        <div>
+            @include('includes.sidebar')
+        </div>
+
     </div>
 </nav>

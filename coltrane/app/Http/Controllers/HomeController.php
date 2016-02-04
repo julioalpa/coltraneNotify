@@ -14,6 +14,7 @@ class HomeController extends Controller
     {
         return view('pages.sl_results',[
             'units' => Estaciones::all()
+            ->SortBy('status',false)
         ]);
     }
 }
