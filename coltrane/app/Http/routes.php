@@ -15,6 +15,20 @@ Route::get('/', [
     'uses'  => 'HomeController@index',
     'as'    => 'home_store_path'
 ]);
+Route::get('/estaciones/status/{id}', [
+    'uses'  => 'EstacionesController@getStatus',
+    'as'    => 'estaciones_status_path'
+]);
+Route::get('/estaciones', [
+    'uses'  => 'EstacionesController@index',
+    'as'    => 'estaciones_show_path'
+]);
+
+Route::post('/estaciones', [
+    'uses'  => 'EstacionesController@store',
+    'as'    => 'estaciones_store_path'
+]);
+
 
 /*
 |--------------------------------------------------------------------------

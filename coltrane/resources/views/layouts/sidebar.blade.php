@@ -14,15 +14,10 @@
     </header>
 
     <div class="row">
-    <!-- sidebar content -->
-    <div id="sidebar" class="col-md-3">
-        @include('includes.sidebar')
-    </div>
-
-    <!-- main content -->
-    <div id="content" class="col-md-9">
-        @yield('content')
-    </div>
+        <!-- main content -->
+        <div id="content" class="col-md-12">
+            @yield('content')
+        </div>
 
     </div>
 
